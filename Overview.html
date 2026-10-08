@@ -25,6 +25,23 @@
     .table {
       font-size: 20px;
     }
+    li {
+      font-size: 16px;
+    }
+    .nested-list {
+      margin-left: 20px;
+    }
+    #facts {
+      font-style: italic;
+    }
+    #nestedfact1 {
+      font-style: italic;
+      font-size: 14px;
+    }
+    #nestedfact2 {
+      font-style: italic;
+      font-size: 13px; /* Adjusted font size to make it take up less space compared to the rest of the lists, pet peeve*/
+    }
   </style>
 </head>
 <body>
@@ -36,32 +53,32 @@
   <h3>This page will be going over:</h3>
   <ul>
   <li>What is Gang Beasts?</li>
-  <ul>
+  <ul class="nested-list">
   <li>Gamemodes of Gang Beasts</li>
   <li>Gameplay Modes</li>
-  </ul>
+  </ul class="nested-list">
   <li>Who Developed Gang Beasts?</li>
-  <ul>
+  <ul class="nested-list">
   <li>Studio Developer of Gang Beasts</li>
   <li>Publisher of Gang Beasts</li>
   <li>Some Insight on the Developers of Gang Beasts</li>
-  </ul>
+  </ul class="nested-list">
   <li>Release Info & Where it was released.</li>
-  <ul>
+  <ul class="nested-list">
   <li>Release Dates of Gang Beasts</li>
   <li>Platforms Gang Beasts officially released on</li>
-  </ul>
+  </ul class="nested-list">
   <li>A Basic Premise of Gang Beasts.</li>
-  <ul>
+  <ul class="nested-list">
   <li>Where the game is set up</li>
   <li>The conflict of the game</li>
   <li>Gamemode types of the game</li>
-  </ul>
-  <li>Some Quick Fun Facts!</li>
-  <ul>
-  <li>The situation behind the development of Gang Beasts</li>
-  <li>How the community behind Gang Beasts helped develop it</li>
-  </ul>
+  </ul class="nested-list">
+  <li id="facts">Some Quick Fun Facts!</li>
+  <ul class="nested-list">
+  <li id="nestedfact1">The situation behind the development of Gang Beasts</li>
+  <li id="nestedfact2">How the community behind Gang Beasts helped develop it</li>
+  </ul class="nested-list">
   </ul>
   <hr>
   <h1>What is Gang Beasts?</h1> 
